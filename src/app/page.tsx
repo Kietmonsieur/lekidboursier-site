@@ -19,7 +19,7 @@ export default function Home() {
               </span>
             </div>
             <nav className="flex flex-wrap gap-4 text-sm font-normal text-[#111111]">
-              <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              <a href="/bases" className="transition-colors hover:text-[#2E7D4F]">
                 Les bases
               </a>
               <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
@@ -161,7 +161,7 @@ export default function Home() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <a href="/bases" className="block font-normal hover:text-[#2E7D4F]">
                   Les bases
                 </a>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
