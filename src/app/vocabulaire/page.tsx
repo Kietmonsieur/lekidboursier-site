@@ -28,7 +28,7 @@ export default function VocabulairePage() {
               <a href="/investir" className="transition-colors hover:text-[#2E7D4F]">
                 Investir
               </a>
-              <a href="#" className="transition-colors hover:text-[#2E7D4F]">
+              <a href="/economie" className="transition-colors hover:text-[#2E7D4F]">
                 Économie
               </a>
               <a href="#" className="transition-colors hover:text-[#2E7D4F]">
@@ -40,7 +40,7 @@ export default function VocabulairePage() {
 
         <section className="mb-16 rounded-3xl bg-[#111111] px-6 py-10 sm:px-8 sm:py-12">
           <div className="max-w-3xl space-y-7">
-            <span className="inline-flex rounded-full border border-[#D3CDB9]/20 bg-[#D3CDB9]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
+            <span className="inline-flex rounded-full border border-[#2E7D4F]/40 bg-[#2E7D4F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
               VOCABULAIRE
             </span>
 

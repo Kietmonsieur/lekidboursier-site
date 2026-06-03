@@ -29,7 +29,7 @@ export default function Home() {
               <a href="/investir" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Investir
               </a>
-              <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              <a href="/economie" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Économie
               </a>
               <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
@@ -93,12 +93,14 @@ export default function Home() {
                 </p>
               </article>
             </Link>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
-              <h3 className="text-lg font-semibold">Investir</h3>
-              <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
-                Actions, ETF, diversification, risque et approche long terme.
-              </p>
-            </article>
+            <Link href="/investir" className="block">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+                <h3 className="text-lg font-semibold">Investir</h3>
+                <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
+                  Actions, ETF, diversification, risque et approche long terme.
+                </p>
+              </article>
+            </Link>
             <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
               <h3 className="text-lg font-semibold">Économie</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">

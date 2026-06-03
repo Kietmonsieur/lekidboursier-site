@@ -83,7 +83,7 @@ export default function InvestirPage() {
               <a href="/investir" className="transition-colors font-semibold text-[#2E7D4F] hover:text-[#2E7D4F]">
                 Investir
               </a>
-              <a href="#" className="transition-colors hover:text-[#2E7D4F]">
+              <a href="/economie" className="transition-colors hover:text-[#2E7D4F]">
                 Économie
               </a>
               <a href="#" className="transition-colors hover:text-[#2E7D4F]">
@@ -96,7 +96,7 @@ export default function InvestirPage() {
         <section className="mb-16 rounded-3xl border border-[#D3CDB9]/15 bg-[#111111]/95 p-8 shadow-sm sm:p-10">
           <div className="grid gap-6 items-center lg:grid-cols-2">
             <div className="space-y-6">
-              <span className="inline-flex rounded-full border border-[#D3CDB9]/20 bg-[#D3CDB9]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
+              <span className="inline-flex rounded-full border border-[#2E7D4F]/40 bg-[#2E7D4F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
                 INVESTIR
               </span>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
