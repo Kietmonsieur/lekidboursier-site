@@ -1,6 +1,71 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const FinanceHeroIllustration = () => (
+  <svg
+    role="img"
+    aria-hidden="true"
+    viewBox="0 0 520 360"
+    className="w-full max-w-md"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g stroke="#D3CDB9" strokeWidth="1" opacity="0.08">
+      <line x1="40" y1="50" x2="480" y2="50" />
+      <line x1="40" y1="100" x2="480" y2="100" />
+      <line x1="40" y1="150" x2="480" y2="150" />
+      <line x1="40" y1="200" x2="480" y2="200" />
+      <line x1="40" y1="250" x2="480" y2="250" />
+      <line x1="40" y1="300" x2="480" y2="300" />
+      <line x1="80" y1="30" x2="80" y2="320" />
+      <line x1="140" y1="30" x2="140" y2="320" />
+      <line x1="200" y1="30" x2="200" y2="320" />
+      <line x1="260" y1="30" x2="260" y2="320" />
+      <line x1="320" y1="30" x2="320" y2="320" />
+      <line x1="380" y1="30" x2="380" y2="320" />
+      <line x1="440" y1="30" x2="440" y2="320" />
+    </g>
+    <g transform="rotate(-8 154 246)">
+      <rect x="64" y="206" width="154" height="58" rx="8" fill="#2E7D4F" opacity="0.72" />
+      <rect x="78" y="220" width="126" height="30" rx="5" fill="#111111" opacity="0.28" />
+      <circle cx="106" cy="235" r="12" fill="#F5F1E8" opacity="0.72" />
+      <path d="M150 229 H190" stroke="#D3CDB9" strokeWidth="5" strokeLinecap="round" opacity="0.65" />
+    </g>
+    <g transform="rotate(7 372 226)">
+      <rect x="302" y="196" width="144" height="54" rx="8" fill="#D3CDB9" opacity="0.9" />
+      <rect x="316" y="210" width="116" height="26" rx="5" fill="#111111" opacity="0.2" />
+      <circle cx="342" cy="223" r="10" fill="#2E7D4F" opacity="0.8" />
+      <path d="M378 218 H420" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.28" />
+    </g>
+    <g>
+      <rect x="152" y="82" width="196" height="220" rx="18" fill="#F5F1E8" opacity="0.96" />
+      <rect x="174" y="108" width="152" height="24" rx="6" fill="#D3CDB9" opacity="0.85" />
+      <path d="M184 164 H310" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.22" />
+      <path d="M184 192 H286" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.18" />
+      <path d="M184 220 H300" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.18" />
+      <path d="M184 248 H270" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.18" />
+      <rect x="286" y="154" width="34" height="34" rx="8" fill="#2E7D4F" opacity="0.92" />
+      <path d="M294 171 H312" stroke="#F5F1E8" strokeWidth="4" strokeLinecap="round" opacity="0.82" />
+      <path d="M303 162 V180" stroke="#F5F1E8" strokeWidth="4" strokeLinecap="round" opacity="0.82" />
+      <path d="M152 124 H138" stroke="#D3CDB9" strokeWidth="7" strokeLinecap="round" />
+      <path d="M152 166 H138" stroke="#D3CDB9" strokeWidth="7" strokeLinecap="round" />
+      <path d="M152 208 H138" stroke="#D3CDB9" strokeWidth="7" strokeLinecap="round" />
+      <path d="M152 250 H138" stroke="#D3CDB9" strokeWidth="7" strokeLinecap="round" />
+    </g>
+    <g>
+      <circle cx="402" cy="128" r="34" fill="#D3CDB9" opacity="0.92" />
+      <circle cx="402" cy="128" r="22" fill="#111111" opacity="0.12" />
+      <path d="M390 128 H414" stroke="#2E7D4F" strokeWidth="5" strokeLinecap="round" />
+      <path d="M402 116 V140" stroke="#2E7D4F" strokeWidth="5" strokeLinecap="round" opacity="0.8" />
+    </g>
+    <g>
+      <rect x="354" y="266" width="118" height="62" rx="10" fill="#111111" stroke="#D3CDB9" strokeWidth="2" opacity="0.96" />
+      <rect x="372" y="286" width="34" height="12" rx="3" fill="#2E7D4F" opacity="0.88" />
+      <path d="M422 298 H454" stroke="#D3CDB9" strokeWidth="5" strokeLinecap="round" opacity="0.72" />
+      <path d="M422 314 H446" stroke="#F5F1E8" strokeWidth="4" strokeLinecap="round" opacity="0.42" />
+    </g>
+  </svg>
+);
+
 export default function FinancePersonnellePage() {
   return (
     <div className="min-h-screen bg-[#111111] text-[#F5F1E8]">
@@ -40,7 +105,8 @@ export default function FinancePersonnellePage() {
         </header>
 
         <section className="mb-16 rounded-3xl border border-[#D3CDB9]/15 bg-[#111111]/95 p-8 shadow-sm sm:p-10">
-          <div className="space-y-6">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div className="space-y-6">
             <span className="inline-flex rounded-full border border-[#2E7D4F]/40 bg-[#2E7D4F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
               Finance personnelle
             </span>
@@ -50,6 +116,10 @@ export default function FinancePersonnellePage() {
             <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
               Avant de parler d’investissement, il faut comprendre ton budget, tes dettes, ton crédit et les outils financiers disponibles au Canada.
             </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <FinanceHeroIllustration />
+            </div>
           </div>
         </section>
 
