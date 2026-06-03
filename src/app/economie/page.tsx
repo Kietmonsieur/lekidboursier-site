@@ -7,7 +7,7 @@ export default function EconomiePage() {
       <main className="mx-auto max-w-6xl px-6 py-8 sm:px-10 lg:px-12">
         <header className="mb-10 rounded-3xl bg-[#D3CDB9] px-6 py-5 text-[#111111] shadow-sm sm:px-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <a href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo-icon-lekidboursier-clean.png"
                 alt="Icône LeKidBoursier"
@@ -18,7 +18,7 @@ export default function EconomiePage() {
               <span className="text-sm font-semibold uppercase tracking-[0.26em] text-[#111111]">
                 LeKidBoursier
               </span>
-            </a>
+            </Link>
             <nav className="flex flex-wrap gap-4 text-sm font-normal text-[#111111]">
               <Link href="/finance-personnelle" className="transition-colors hover:text-[#2E7D4F]">
                 Finance personnelle
@@ -46,7 +46,7 @@ export default function EconomiePage() {
                 ÉCONOMIE
               </span>
               <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
-                L'économie et ses principaux indicateurs.
+                L&apos;économie et ses principaux indicateurs.
               </h1>
               <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
                 Une mauvaise nouvelle économique ne veut pas toujours dire que ton portefeuille va baisser.

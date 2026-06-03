@@ -23,15 +23,15 @@ export default function Home() {
               <Link href="/finance-personnelle" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Finance personnelle
               </Link>
-              <a href="/vocabulaire" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              <Link href="/vocabulaire" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Vocabulaire
-              </a>
-              <a href="/investir" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              </Link>
+              <Link href="/investir" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Investir
-              </a>
-              <a href="/economie" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              </Link>
+              <Link href="/economie" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Économie
-              </a>
+              </Link>
               <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Calculatrices
               </a>
@@ -46,11 +46,11 @@ export default function Home() {
             </span>
 
             <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
-              Comprendre ton argent avant d'investir.
+              Comprendre ton argent avant d&apos;investir.
             </h1>
 
             <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
-              Un site bâti pour t'aider à poser tes bases, comprendre où va ton argent, suivre les marchés et investir avec plus de recul.
+              Un site bâti pour t&apos;aider à poser tes bases, comprendre où va ton argent, suivre les marchés et investir avec plus de recul.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">

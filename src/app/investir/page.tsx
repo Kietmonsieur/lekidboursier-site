@@ -61,7 +61,7 @@ export default function InvestirPage() {
       <main className="mx-auto max-w-6xl px-6 py-8 sm:px-10 lg:px-12">
         <header className="mb-10 rounded-3xl bg-[#D3CDB9] px-6 py-5 text-[#111111] shadow-sm sm:px-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <a href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo-icon-lekidboursier-clean.png"
                 alt="Icône LeKidBoursier"
@@ -72,20 +72,20 @@ export default function InvestirPage() {
               <span className="text-sm font-semibold uppercase tracking-[0.26em] text-[#111111]">
                 LeKidBoursier
               </span>
-            </a>
+            </Link>
             <nav className="flex flex-wrap gap-4 text-sm font-normal text-[#111111]">
-              <a href="/finance-personnelle" className="transition-colors hover:text-[#2E7D4F]">
+              <Link href="/finance-personnelle" className="transition-colors hover:text-[#2E7D4F]">
                 Finance personnelle
-              </a>
-              <a href="/vocabulaire" className="transition-colors hover:text-[#2E7D4F]">
+              </Link>
+              <Link href="/vocabulaire" className="transition-colors hover:text-[#2E7D4F]">
                 Vocabulaire
-              </a>
-              <a href="/investir" className="transition-colors font-semibold text-[#2E7D4F] hover:text-[#2E7D4F]">
+              </Link>
+              <Link href="/investir" className="transition-colors font-semibold text-[#2E7D4F] hover:text-[#2E7D4F]">
                 Investir
-              </a>
-              <a href="/economie" className="transition-colors hover:text-[#2E7D4F]">
+              </Link>
+              <Link href="/economie" className="transition-colors hover:text-[#2E7D4F]">
                 Économie
-              </a>
+              </Link>
               <a href="#" className="transition-colors hover:text-[#2E7D4F]">
                 Calculatrices
               </a>
