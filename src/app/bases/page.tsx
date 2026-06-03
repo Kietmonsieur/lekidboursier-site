@@ -29,9 +29,9 @@ export default function BasesPage() {
               <Link href="/investir" className="transition-colors hover:text-[#2E7D4F]">
                 Investir
               </Link>
-              <a href="#" className="transition-colors hover:text-[#2E7D4F]">
+              <Link href="/economie" className="transition-colors hover:text-[#2E7D4F]">
                 Économie
-              </a>
+              </Link>
               <a href="#" className="transition-colors hover:text-[#2E7D4F]">
                 Calculatrices
               </a>
@@ -396,9 +396,9 @@ export default function BasesPage() {
                 <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
                 </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
-                </a>
+                </Link>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
                 </a>

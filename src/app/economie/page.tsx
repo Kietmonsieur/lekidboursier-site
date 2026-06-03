@@ -53,58 +53,106 @@ export default function EconomiePage() {
               </p>
             </div>
 
-            {/* Economic Hero Illustration */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center lg:justify-end">
               <svg
                 role="img"
                 aria-hidden="true"
-                viewBox="0 0 280 320"
-                className="w-full max-w-xs"
+                viewBox="0 0 520 360"
+                className="w-full max-w-md"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMidYMid meet"
               >
-                {/* Subtle dashboard grid */}
-                <g stroke="#D3CDB9" strokeWidth="0.5" opacity="0.08">
-                  <line x1="20" y1="70" x2="260" y2="70" />
-                  <line x1="20" y1="130" x2="260" y2="130" />
-                  <line x1="20" y1="190" x2="260" y2="190" />
-                  <line x1="20" y1="250" x2="260" y2="250" />
-                  <line x1="60" y1="40" x2="60" y2="280" />
-                  <line x1="120" y1="40" x2="120" y2="280" />
-                  <line x1="180" y1="40" x2="180" y2="280" />
-                  <line x1="240" y1="40" x2="240" y2="280" />
+                <g stroke="#D3CDB9" strokeWidth="1" opacity="0.08">
+                  <line x1="42" y1="58" x2="478" y2="58" />
+                  <line x1="42" y1="106" x2="478" y2="106" />
+                  <line x1="42" y1="154" x2="478" y2="154" />
+                  <line x1="42" y1="202" x2="478" y2="202" />
+                  <line x1="42" y1="250" x2="478" y2="250" />
+                  <line x1="42" y1="298" x2="478" y2="298" />
+                  <line x1="78" y1="34" x2="78" y2="318" />
+                  <line x1="140" y1="34" x2="140" y2="318" />
+                  <line x1="202" y1="34" x2="202" y2="318" />
+                  <line x1="264" y1="34" x2="264" y2="318" />
+                  <line x1="326" y1="34" x2="326" y2="318" />
+                  <line x1="388" y1="34" x2="388" y2="318" />
+                  <line x1="450" y1="34" x2="450" y2="318" />
                 </g>
 
-                {/* Minimal bars */}
-                <g opacity="0.7">
-                  <rect x="50" y="220" width="10" height="50" rx="2" fill="#D3CDB9" />
-                  <rect x="72" y="200" width="10" height="70" rx="2" fill="#D3CDB9" opacity="0.55" />
-                  <rect x="94" y="230" width="10" height="40" rx="2" fill="#2E7D4F" opacity="0.75" />
-                  <rect x="116" y="215" width="10" height="55" rx="2" fill="#D3CDB9" opacity="0.5" />
+                <path d="M86 252 H432" stroke="#D3CDB9" strokeWidth="1.5" strokeLinecap="round" opacity="0.16" />
+                <path d="M86 116 H432" stroke="#D3CDB9" strokeWidth="1" strokeLinecap="round" opacity="0.1" />
+                <path d="M86 76 V276" stroke="#D3CDB9" strokeWidth="1" strokeLinecap="round" opacity="0.1" />
+
+                <g>
+                  <rect x="112" y="206" width="12" height="46" rx="4" fill="#D3CDB9" opacity="0.42" />
+                  <rect x="144" y="182" width="12" height="70" rx="4" fill="#D3CDB9" opacity="0.58" />
+                  <rect x="176" y="214" width="12" height="38" rx="4" fill="#2E7D4F" opacity="0.76" />
+                  <rect x="208" y="164" width="12" height="88" rx="4" fill="#D3CDB9" opacity="0.4" />
+                  <rect x="240" y="192" width="12" height="60" rx="4" fill="#D3CDB9" opacity="0.52" />
                 </g>
 
-                {/* Subtle curve accent */}
                 <path
-                  d="M42 160 C72 140, 108 120, 138 130 C168 140, 198 150, 228 120"
+                  d="M88 220 C124 198, 146 156, 184 170 C218 182, 226 134, 264 142 C306 151, 318 104, 356 112 C390 119, 404 92, 432 78"
                   fill="none"
                   stroke="#2E7D4F"
-                  strokeWidth="2"
+                  strokeWidth="4"
                   strokeLinecap="round"
-                  opacity="0.65"
+                  strokeLinejoin="round"
+                  opacity="0.86"
+                />
+                <path
+                  d="M88 220 C124 198, 146 156, 184 170 C218 182, 226 134, 264 142 C306 151, 318 104, 356 112 C390 119, 404 92, 432 78"
+                  fill="none"
+                  stroke="#D3CDB9"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  opacity="0.28"
                 />
 
-                {/* Simple symbols */}
-                <text x="48" y="60" fill="#F5F1E8" opacity="0.72" fontSize="18" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
-                  %
+                <g fill="#111111" stroke="#2E7D4F" strokeWidth="3">
+                  <circle cx="184" cy="170" r="6" />
+                  <circle cx="264" cy="142" r="6" />
+                  <circle cx="356" cy="112" r="6" />
+                  <circle cx="432" cy="78" r="6" />
+                </g>
+
+                <g>
+                  <path d="M92 102 H126" stroke="#D3CDB9" strokeWidth="2" strokeLinecap="round" opacity="0.24" />
+                  <text x="104" y="94" fill="#F5F1E8" opacity="0.72" fontSize="16" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                    %
+                  </text>
+                  <path d="M166 102 H212" stroke="#D3CDB9" strokeWidth="2" strokeLinecap="round" opacity="0.24" />
+                  <text x="176" y="94" fill="#D3CDB9" opacity="0.82" fontSize="14" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                    CAD
+                  </text>
+                  <path d="M254 102 H292" stroke="#2E7D4F" strokeWidth="2" strokeLinecap="round" opacity="0.34" />
+                  <text x="265" y="94" fill="#2E7D4F" opacity="0.9" fontSize="14" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                    PIB
+                  </text>
+                </g>
+
+                <g>
+                  <path d="M334 248 H364" stroke="#D3CDB9" strokeWidth="2" strokeLinecap="round" opacity="0.22" />
+                  <text x="340" y="241" fill="#D3CDB9" opacity="0.76" fontSize="12" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                    IPC
+                  </text>
+                  <path d="M396 248 H432" stroke="#2E7D4F" strokeWidth="2" strokeLinecap="round" opacity="0.32" />
+                  <text x="400" y="241" fill="#2E7D4F" opacity="0.9" fontSize="12" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                    Taux
+                  </text>
+                </g>
+
+                <text x="86" y="284" fill="#D3CDB9" opacity="0.52" fontSize="12" fontWeight="600" fontFamily="Inter, system-ui, sans-serif">
+                  PIB
                 </text>
-                <text x="176" y="58" fill="#D3CDB9" opacity="0.7" fontSize="18" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+                <text x="186" y="284" fill="#D3CDB9" opacity="0.52" fontSize="12" fontWeight="600" fontFamily="Inter, system-ui, sans-serif">
+                  IPC
+                </text>
+                <text x="286" y="284" fill="#D3CDB9" opacity="0.52" fontSize="12" fontWeight="600" fontFamily="Inter, system-ui, sans-serif">
                   CAD
                 </text>
-                <text x="112" y="105" fill="#2E7D4F" opacity="0.8" fontSize="18" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
-                  2.0
-                </text>
-                <text x="186" y="175" fill="#F5F1E8" opacity="0.68" fontSize="18" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
-                  4.5
+                <text x="386" y="284" fill="#D3CDB9" opacity="0.52" fontSize="12" fontWeight="600" fontFamily="Inter, system-ui, sans-serif">
+                  %
                 </text>
               </svg>
             </div>

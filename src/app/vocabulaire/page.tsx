@@ -1,6 +1,75 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const VocabulaireHeroIllustration = () => (
+  <svg
+    role="img"
+    aria-hidden="true"
+    viewBox="0 0 520 360"
+    className="w-full max-w-md"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g stroke="#D3CDB9" strokeWidth="1" opacity="0.08">
+      <line x1="40" y1="52" x2="480" y2="52" />
+      <line x1="40" y1="104" x2="480" y2="104" />
+      <line x1="40" y1="156" x2="480" y2="156" />
+      <line x1="40" y1="208" x2="480" y2="208" />
+      <line x1="40" y1="260" x2="480" y2="260" />
+      <line x1="84" y1="28" x2="84" y2="320" />
+      <line x1="148" y1="28" x2="148" y2="320" />
+      <line x1="212" y1="28" x2="212" y2="320" />
+      <line x1="276" y1="28" x2="276" y2="320" />
+      <line x1="340" y1="28" x2="340" y2="320" />
+      <line x1="404" y1="28" x2="404" y2="320" />
+    </g>
+
+    <g transform="rotate(-6 188 116)">
+      <rect x="92" y="72" width="150" height="84" rx="14" fill="#F5F1E8" opacity="0.94" />
+      <path d="M112 104 H174" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.22" />
+      <path d="M112 128 H202" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.16" />
+      <text x="188" y="112" fill="#2E7D4F" fontSize="24" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+        ETF
+      </text>
+    </g>
+
+    <g transform="rotate(7 338 104)">
+      <rect x="282" y="58" width="140" height="82" rx="14" fill="#D3CDB9" opacity="0.92" />
+      <path d="M302 92 H354" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.2" />
+      <path d="M302 116 H374" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.15" />
+      <text x="364" y="101" fill="#2E7D4F" fontSize="22" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+        CELI
+      </text>
+    </g>
+
+    <g transform="rotate(3 206 230)">
+      <rect x="122" y="186" width="168" height="104" rx="16" fill="#111111" stroke="#D3CDB9" strokeWidth="2" />
+      <rect x="144" y="208" width="56" height="14" rx="4" fill="#2E7D4F" opacity="0.86" />
+      <path d="M144 242 H250" stroke="#D3CDB9" strokeWidth="5" strokeLinecap="round" opacity="0.62" />
+      <path d="M144 266 H226" stroke="#F5F1E8" strokeWidth="5" strokeLinecap="round" opacity="0.34" />
+      <path d="M238 214 H262" stroke="#F5F1E8" strokeWidth="5" strokeLinecap="round" opacity="0.74" />
+      <path d="M250 202 V226" stroke="#F5F1E8" strokeWidth="5" strokeLinecap="round" opacity="0.74" />
+    </g>
+
+    <g transform="rotate(-8 376 236)">
+      <rect x="326" y="194" width="118" height="78" rx="14" fill="#F5F1E8" opacity="0.94" />
+      <path d="M346 224 H398" stroke="#111111" strokeWidth="5" strokeLinecap="round" opacity="0.2" />
+      <text x="382" y="253" fill="#2E7D4F" fontSize="24" fontWeight="700" fontFamily="Inter, system-ui, sans-serif">
+        P/E
+      </text>
+    </g>
+
+    <g>
+      <circle cx="362" cy="284" r="34" fill="none" stroke="#2E7D4F" strokeWidth="7" />
+      <path d="M386 308 L420 338" stroke="#2E7D4F" strokeWidth="8" strokeLinecap="round" />
+      <circle cx="362" cy="284" r="18" fill="#D3CDB9" opacity="0.16" />
+    </g>
+
+    <text x="76" y="250" fill="#D3CDB9" fontSize="28" fontWeight="700" fontFamily="Inter, system-ui, sans-serif" opacity="0.86">
+      %
+    </text>
+  </svg>
+);
+
 export default function VocabulairePage() {
   return (
     <div className="min-h-screen bg-[#111111] text-[#F5F1E8]">
@@ -39,19 +108,24 @@ export default function VocabulairePage() {
           </div>
         </header>
 
-        <section className="mb-16 rounded-3xl bg-[#111111] px-6 py-10 sm:px-8 sm:py-12">
-          <div className="max-w-3xl space-y-7">
-            <span className="inline-flex rounded-full border border-[#2E7D4F]/40 bg-[#2E7D4F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
-              VOCABULAIRE
-            </span>
+        <section className="mb-16 rounded-3xl border border-[#D3CDB9]/15 bg-[#111111]/95 p-8 shadow-sm sm:p-10">
+          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
+            <div className="max-w-3xl space-y-7">
+              <span className="inline-flex rounded-full border border-[#2E7D4F]/40 bg-[#2E7D4F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
+                VOCABULAIRE
+              </span>
 
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
-              Comprendre le langage de la finance, simplement.
-            </h1>
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
+                Comprendre le langage de la finance, simplement.
+              </h1>
 
-            <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
-              Des définitions simples pour mieux comprendre les marchés, les entreprises et l’investissement long terme.
-            </p>
+              <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
+                Des définitions simples pour mieux comprendre les marchés, les entreprises et l’investissement long terme.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <VocabulaireHeroIllustration />
+            </div>
           </div>
         </section>
 
@@ -65,7 +139,7 @@ export default function VocabulairePage() {
             <details className="group overflow-hidden rounded-3xl border border-[#D3CDB9]/20 bg-[#111111]">
               <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-4 text-sm font-semibold text-[#F5F1E8] transition-colors hover:text-[#D3CDB9]">
                 <span>Vocabulaire de base</span>
-                <span className="text-xs text-[#F5F1E8]/60 group-open:text-[#D3CDB9]">+</span>
+                <span className="text-base font-semibold text-[#2E7D4F]">+</span>
               </summary>
 
               <div className="border-t border-[#D3CDB9]/10 px-4 py-4">
@@ -144,7 +218,7 @@ export default function VocabulairePage() {
             <details className="group overflow-hidden rounded-3xl border border-[#D3CDB9]/20 bg-[#111111]">
               <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-4 text-sm font-semibold text-[#F5F1E8] transition-colors hover:text-[#D3CDB9]">
                 <span>Placements et produits</span>
-                <span className="text-xs text-[#F5F1E8]/60 group-open:text-[#D3CDB9]">+</span>
+                <span className="text-base font-semibold text-[#2E7D4F]">+</span>
               </summary>
 
               <div className="border-t border-[#D3CDB9]/10 px-4 py-4">
@@ -199,7 +273,7 @@ export default function VocabulairePage() {
             <details className="group overflow-hidden rounded-3xl border border-[#D3CDB9]/20 bg-[#111111]">
               <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-4 text-sm font-semibold text-[#F5F1E8] transition-colors hover:text-[#D3CDB9]">
                 <span>Analyser une entreprise</span>
-                <span className="text-xs text-[#F5F1E8]/60 group-open:text-[#D3CDB9]">+</span>
+                <span className="text-base font-semibold text-[#2E7D4F]">+</span>
               </summary>
 
               <div className="border-t border-[#D3CDB9]/10 px-4 py-4">
@@ -270,7 +344,7 @@ export default function VocabulairePage() {
             <details className="group overflow-hidden rounded-3xl border border-[#D3CDB9]/20 bg-[#111111]">
               <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-4 text-sm font-semibold text-[#F5F1E8] transition-colors hover:text-[#D3CDB9]">
                 <span>États financiers</span>
-                <span className="text-xs text-[#F5F1E8]/60 group-open:text-[#D3CDB9]">+</span>
+                <span className="text-base font-semibold text-[#2E7D4F]">+</span>
               </summary>
 
               <div className="border-t border-[#D3CDB9]/10 px-4 py-4">
@@ -387,18 +461,18 @@ export default function VocabulairePage() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
                   Finance personnelle
-                </a>
-                <a href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
                   Vocabulaire
-                </a>
-                <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
-                </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
-                </a>
+                </Link>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
                 </a>

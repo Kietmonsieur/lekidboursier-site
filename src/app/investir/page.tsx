@@ -186,15 +186,15 @@ export default function InvestirPage() {
                 Un CELI, un REER ou un CELIAPP ne sont pas des investissements en soi. Ce sont des comptes avec des règles différentes. À l’intérieur, tu peux détenir différents placements comme des actions, des ETF ou d’autres produits.
               </p>
             </div>
-            <div className="space-y-4 rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-sm text-[#F5F1E8]/90 sm:p-8">
+            <div className="space-y-5 rounded-3xl border border-[#D3CDB9]/10 border-l-[#2E7D4F]/70 bg-[#111111] p-6 text-sm text-[#F5F1E8]/90 sm:p-8">
               <div>
-                <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#D3CDB9]">Compte</p>
+                <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#2E7D4F]">Compte</p>
                 <p className="mt-2 text-sm leading-7 text-[#F5F1E8]/80">
                   L’enveloppe qui définit les règles fiscales et les protections disponibles.
                 </p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#D3CDB9]">Placement</p>
+                <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#2E7D4F]">Placement</p>
                 <p className="mt-2 text-sm leading-7 text-[#F5F1E8]/80">
                   Ce que tu mets dans le compte : actions, ETF, obligations ou autres produits.
                 </p>
@@ -209,14 +209,14 @@ export default function InvestirPage() {
             <p className="text-sm leading-7 text-[#F5F1E8]/80 sm:text-base">
               Au Canada, tu peux ouvrir un compte d’investissement avec différentes plateformes ou institutions financières. Le bon choix dépend de tes besoins, des frais, de la simplicité, des produits disponibles et de ton niveau d’autonomie.
             </p>
-            <ul className="space-y-3 text-sm leading-7 text-[#F5F1E8]/80 sm:text-base">
-              <li>Wealthsimple</li>
-              <li>Disnat</li>
-              <li>Banque Nationale Courtage direct</li>
-              <li>RBC Placements en Direct</li>
-              <li>Autres banques ou courtiers en ligne</li>
+            <ul className="flex flex-wrap gap-3 text-sm text-[#F5F1E8]/90 sm:text-base">
+              <li className="rounded-full border border-[#D3CDB9]/15 bg-[#111111] px-4 py-2 transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">Wealthsimple</li>
+              <li className="rounded-full border border-[#D3CDB9]/15 bg-[#111111] px-4 py-2 transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">Disnat</li>
+              <li className="rounded-full border border-[#D3CDB9]/15 bg-[#111111] px-4 py-2 transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">Banque Nationale Courtage direct</li>
+              <li className="rounded-full border border-[#D3CDB9]/15 bg-[#111111] px-4 py-2 transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">RBC Placements en Direct</li>
+              <li className="rounded-full border border-[#D3CDB9]/15 bg-[#111111] px-4 py-2 transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">Autres banques ou courtiers en ligne</li>
             </ul>
-            <p className="text-sm leading-7 text-[#F5F1E8]/80 sm:text-base">
+            <p className="border-l-4 border-[#2E7D4F] bg-[#111111] px-5 py-4 text-sm leading-7 text-[#F5F1E8]/80 sm:text-base">
               Les frais et les fonctionnalités peuvent changer. Il faut toujours vérifier directement auprès de la plateforme avant d’ouvrir un compte.
             </p>
           </div>
@@ -254,18 +254,18 @@ export default function InvestirPage() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
                   Finance personnelle
-                </a>
-                <a href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
                   Vocabulaire
-                </a>
-                <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
-                </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
-                </a>
+                </Link>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
                 </a>

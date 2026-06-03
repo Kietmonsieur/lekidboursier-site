@@ -301,18 +301,18 @@ export default function FinancePersonnellePage() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
                   Finance personnelle
-                </a>
-                <a href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
                   Vocabulaire
-                </a>
-                <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
-                </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
-                </a>
+                </Link>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
                 </a>

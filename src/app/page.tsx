@@ -62,13 +62,13 @@ export default function Home() {
               </Link>
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-full border border-[#D3CDB9]/20 bg-[#F5F1E8]/5 px-6 py-3 text-sm font-semibold text-[#D3CDB9] hover:border-[#D3CDB9]/40"
+                className="inline-flex items-center justify-center rounded-full border border-[#D3CDB9]/20 bg-[#F5F1E8]/5 px-6 py-3 text-sm font-semibold text-[#D3CDB9] transition-colors hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10"
               >
                 Explorer les sujets
               </a>
             </div>
 
-            <div className="rounded-3xl border border-[#D3CDB9]/15 bg-[#F5F1E8]/5 p-5 text-sm leading-7 text-[#D3CDB9]">
+            <div className="rounded-3xl border border-[#D3CDB9]/15 border-l-[#2E7D4F]/70 bg-[#F5F1E8]/5 p-5 text-sm leading-7 text-[#D3CDB9]">
               Contenu éducatif seulement. Je ne suis pas conseiller financier. Les informations partagées servent à mieux comprendre la finance et ne remplacent pas un avis professionnel.
             </div>
           </div>
@@ -78,7 +78,7 @@ export default function Home() {
           <h2 className="text-2xl font-semibold text-[#F5F1E8]">Par où commencer ?</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
             <Link href="/finance-personnelle" className="block">
-              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">
                 <h3 className="text-lg font-semibold">Finance personnelle</h3>
                 <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                   Budget, épargne, crédit, dettes, CELI, REER et comptes utiles au Canada.
@@ -86,7 +86,7 @@ export default function Home() {
               </article>
             </Link>
             <Link href="/vocabulaire" className="block">
-              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">
                 <h3 className="text-lg font-semibold">Vocabulaire</h3>
                 <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                   Les mots essentiels pour comprendre la finance : rendement, dividende, ETF, volatilité, P/E ratio.
@@ -94,20 +94,22 @@ export default function Home() {
               </article>
             </Link>
             <Link href="/investir" className="block">
-              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">
                 <h3 className="text-lg font-semibold">Investir</h3>
                 <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                   Actions, ETF, diversification, risque et approche long terme.
                 </p>
               </article>
             </Link>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
-              <h3 className="text-lg font-semibold">Économie</h3>
-              <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
-                Inflation, taux d’intérêt, emploi, Banque du Canada et cycles économiques.
-              </p>
-            </article>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
+            <Link href="/economie" className="block">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/50 hover:bg-[#2E7D4F]/10">
+                <h3 className="text-lg font-semibold">Économie</h3>
+                <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
+                  Inflation, taux d’intérêt, emploi, Banque du Canada et cycles économiques.
+                </p>
+              </article>
+            </Link>
+            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/40 hover:bg-[#2E7D4F]/5">
               <h3 className="text-lg font-semibold">Calculatrices</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                 Des outils simples pour estimer tes objectifs et mieux planifier.
@@ -118,23 +120,23 @@ export default function Home() {
 
         <section className="mt-16 rounded-3xl border border-[#D3CDB9]/15 bg-[#111111]/90 p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-[#F5F1E8]">Pourquoi LeKidBoursier ?</h2>
-          <p className="mt-4 max-w-3xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
+          <p className="mt-4 max-w-3xl rounded-3xl border border-[#2E7D4F]/20 border-l-[#2E7D4F]/60 bg-[#2E7D4F]/10 p-5 text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
             LeKidBoursier est né d’une envie simple : apprendre publiquement, créer du contenu utile et rendre la finance plus accessible. En lisant, en publiant et en vulgarisant, j’apprends moi aussi à mieux comprendre l’argent, les marchés et les comportements qui influencent nos décisions.
           </p>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
+            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/40">
               <h3 className="text-lg font-semibold">Apprendre en partageant</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                 Je ne me présente pas comme expert. L’objectif est d’apprendre, de lire, de réfléchir et de partager des explications simples au fur et à mesure.
               </p>
             </article>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
+            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/40">
               <h3 className="text-lg font-semibold">Rendre la finance plus accessible</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                 La finance personnelle peut sembler compliquée, mais plusieurs notions deviennent plus claires quand elles sont expliquées simplement, avec des exemples concrets.
               </p>
             </article>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
+            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#2E7D4F]/40">
               <h3 className="text-lg font-semibold">Penser long terme</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
                 Patience, constance et discipline financière sont au cœur de l’approche. Dans un monde rempli de distractions, apprendre à prendre du recul devient essentiel.
@@ -168,18 +170,18 @@ export default function Home() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
                   Finance personnelle
-                </a>
-                <a href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
                   Vocabulaire
-                </a>
-                <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
-                </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                </Link>
+                <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
-                </a>
+                </Link>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
                 </a>
