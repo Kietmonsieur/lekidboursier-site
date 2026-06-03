@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,13 +20,13 @@ export default function Home() {
               </span>
             </div>
             <nav className="flex flex-wrap gap-4 text-sm font-normal text-[#111111]">
-              <a href="/bases" className="transition-colors hover:text-[#2E7D4F]">
-                Les bases
-              </a>
-              <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              <Link href="/finance-personnelle" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Finance personnelle
+              </Link>
+              <a href="/vocabulaire" className="transition-colors font-normal hover:text-[#2E7D4F]">
+                Vocabulaire
               </a>
-              <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
+              <a href="/investir" className="transition-colors font-normal hover:text-[#2E7D4F]">
                 Investir
               </a>
               <a href="#" className="transition-colors font-normal hover:text-[#2E7D4F]">
@@ -53,12 +54,12 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#"
+              <Link
+                href="/finance-personnelle"
                 className="inline-flex items-center justify-center rounded-full bg-[#2E7D4F] px-6 py-3 text-sm font-semibold text-[#F5F1E8] shadow-sm shadow-[#2E7D4F]/20 hover:bg-[#2b7448]"
               >
                 Commencer à apprendre
-              </a>
+              </Link>
               <a
                 href="#"
                 className="inline-flex items-center justify-center rounded-full border border-[#D3CDB9]/20 bg-[#F5F1E8]/5 px-6 py-3 text-sm font-semibold text-[#D3CDB9] hover:border-[#D3CDB9]/40"
@@ -76,18 +77,22 @@ export default function Home() {
         <section className="mt-16 rounded-3xl border border-[#D3CDB9]/15 bg-[#111111]/90 p-6 sm:p-8">
           <h2 className="text-2xl font-semibold text-[#F5F1E8]">Par où commencer ?</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
-              <h3 className="text-lg font-semibold">Les bases</h3>
-              <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
-                Les mots essentiels pour comprendre la finance : rendement, dividende, ETF, volatilité, P/E ratio.
-              </p>
-            </article>
-            <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
-              <h3 className="text-lg font-semibold">Finance personnelle</h3>
-              <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
-                Budget, épargne, crédit, dettes, CELI, REER et comptes utiles au Canada.
-              </p>
-            </article>
+            <Link href="/finance-personnelle" className="block">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+                <h3 className="text-lg font-semibold">Finance personnelle</h3>
+                <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
+                  Budget, épargne, crédit, dettes, CELI, REER et comptes utiles au Canada.
+                </p>
+              </article>
+            </Link>
+            <Link href="/vocabulaire" className="block">
+              <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm transition-colors duration-150 hover:border-[#D3CDB9]/20">
+                <h3 className="text-lg font-semibold">Vocabulaire</h3>
+                <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
+                  Les mots essentiels pour comprendre la finance : rendement, dividende, ETF, volatilité, P/E ratio.
+                </p>
+              </article>
+            </Link>
             <article className="rounded-3xl border border-[#D3CDB9]/10 bg-[#111111] p-6 text-[#F5F1E8] shadow-sm">
               <h3 className="text-lg font-semibold">Investir</h3>
               <p className="mt-3 text-sm leading-7 text-[#D3CDB9]">
@@ -161,13 +166,13 @@ export default function Home() {
                 Explorer
               </p>
               <nav className="space-y-3 text-sm text-[#111111]">
-                <a href="/bases" className="block font-normal hover:text-[#2E7D4F]">
-                  Les bases
-                </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <a href="/finance-personnelle" className="block font-normal hover:text-[#2E7D4F]">
                   Finance personnelle
                 </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <a href="/vocabulaire" className="block font-normal hover:text-[#2E7D4F]">
+                  Vocabulaire
+                </a>
+                <a href="/investir" className="block font-normal hover:text-[#2E7D4F]">
                   Investir
                 </a>
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function BasesPage() {
+export default function VocabulairePage() {
   return (
     <div className="min-h-screen bg-[#111111] text-[#F5F1E8]">
       <main className="mx-auto max-w-6xl px-6 py-8 sm:px-10 lg:px-12">
@@ -22,7 +22,7 @@ export default function BasesPage() {
               <a href="/finance-personnelle" className="transition-colors hover:text-[#2E7D4F]">
                 Finance personnelle
               </a>
-              <a href="/vocabulaire" className="transition-colors hover:text-[#2E7D4F]">
+              <a href="/vocabulaire" className="transition-colors font-semibold text-[#2E7D4F] hover:text-[#2E7D4F]">
                 Vocabulaire
               </a>
               <a href="/investir" className="transition-colors hover:text-[#2E7D4F]">
@@ -41,7 +41,7 @@ export default function BasesPage() {
         <section className="mb-16 rounded-3xl bg-[#111111] px-6 py-10 sm:px-8 sm:py-12">
           <div className="max-w-3xl space-y-7">
             <span className="inline-flex rounded-full border border-[#D3CDB9]/20 bg-[#D3CDB9]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#D3CDB9]">
-              Les bases
+              VOCABULAIRE
             </span>
 
             <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
