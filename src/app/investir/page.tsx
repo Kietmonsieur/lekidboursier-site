@@ -86,9 +86,9 @@ export default function InvestirPage() {
               <Link href="/economie" className="transition-colors hover:text-[#2E7D4F]">
                 Économie
               </Link>
-              <a href="#" className="transition-colors hover:text-[#2E7D4F]">
+              <Link href="/calculatrices" className="transition-colors hover:text-[#2E7D4F]">
                 Calculatrices
-              </a>
+              </Link>
             </nav>
           </div>
         </header>
@@ -266,9 +266,9 @@ export default function InvestirPage() {
                 <Link href="/economie" className="block font-normal hover:text-[#2E7D4F]">
                   Économie
                 </Link>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <Link href="/calculatrices" className="block font-normal hover:text-[#2E7D4F]">
                   Calculatrices
-                </a>
+                </Link>
               </nav>
             </div>
 
