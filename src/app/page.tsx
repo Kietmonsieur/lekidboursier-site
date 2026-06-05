@@ -169,11 +169,11 @@ export default function Home() {
             </span>
 
             <h1 className="text-4xl font-semibold leading-tight tracking-tight text-[#F5F1E8] sm:text-5xl">
-              Comprends ton argent pour aider ton futur toi.
+              Comprends ton argent pour préparer ton futur.
             </h1>
 
             <p className="max-w-2xl text-base leading-8 text-[#F5F1E8]/80 sm:text-lg">
-              Un site bâti pour t&apos;aider à poser tes bases, comprendre où va ton argent, suivre les marchés et investir avec plus de recul.
+              Un site bâti pour t&apos;aider à poser tes bases et comprendre où va ton argent.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
@@ -195,7 +195,7 @@ export default function Home() {
               Contenu éducatif seulement. Je ne suis pas conseiller financier. Les informations partagées servent à mieux comprendre la finance et ne remplacent pas un avis professionnel.
             </div>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="hidden justify-center lg:flex lg:justify-end">
               <HomeHeroIllustration />
             </div>
           </div>
