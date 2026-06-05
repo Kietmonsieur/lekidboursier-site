@@ -646,6 +646,12 @@ export default function CalculatricesPage() {
               >
                 Calculatrices
               </Link>
+              <Link
+                href="/articles"
+                className="transition-colors font-normal hover:text-[#2E7D4F]"
+              >
+                Articles
+              </Link>
             </nav>
           </div>
         </header>
@@ -675,7 +681,7 @@ export default function CalculatricesPage() {
         <footer className="mt-16 rounded-3xl bg-[#D3CDB9] px-6 py-10 text-[#111111] sm:px-8">
           <div className="grid gap-8 md:grid-cols-[1.8fr_1fr_1fr]">
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              <Link href="/" className="flex items-center gap-3">
                 <Image
                   src="/logo-icon-lekidboursier-clean.png"
                   alt="Icône LeKidBoursier"
@@ -686,7 +692,7 @@ export default function CalculatricesPage() {
                 <span className="text-sm font-semibold uppercase tracking-[0.24em] text-[#111111]">
                   LeKidBoursier
                 </span>
-              </div>
+              </Link>
               <p className="max-w-md text-sm leading-7 text-[#111111]/90">
                 Finance personnelle, économie et investissement long terme,
                 expliqués simplement.
@@ -728,6 +734,12 @@ export default function CalculatricesPage() {
                 >
                   Calculatrices
                 </Link>
+                <Link
+                  href="/articles"
+                  className="block font-normal hover:text-[#2E7D4F]"
+                >
+                  Articles
+                </Link>
               </nav>
             </div>
 
@@ -746,8 +758,22 @@ export default function CalculatricesPage() {
             </div>
           </div>
 
-          <div className="mt-8 border-t border-[#111111]/10 pt-6 text-sm text-[#111111]/80">
-            © LeKidBoursier
+          <div className="mt-8 flex flex-col gap-4 border-t border-[#111111]/10 pt-6 text-sm text-[#111111]/80 sm:flex-row sm:items-center sm:justify-between">
+            <span>© LeKidBoursier</span>
+            <nav className="flex flex-wrap gap-4 text-sm text-[#111111]/80">
+              <Link
+                href="/mentions-legales"
+                className="font-normal hover:text-[#2E7D4F]"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                href="/confidentialite"
+                className="font-normal hover:text-[#2E7D4F]"
+              >
+                Confidentialité
+              </Link>
+            </nav>
           </div>
         </footer>
       </main>
