@@ -328,7 +328,12 @@ export default function Home() {
                 <a href="#" className="block font-normal hover:text-[#2E7D4F]">
                   Instagram
                 </a>
-                <a href="#" className="block font-normal hover:text-[#2E7D4F]">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61582921749180"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block font-normal hover:text-[#2E7D4F]"
+                >
                   Facebook
                 </a>
               </nav>
